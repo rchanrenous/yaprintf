@@ -6,7 +6,7 @@
 /*   By: rchan-re <rchan-re@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 11:10:30 by rchan-re          #+#    #+#             */
-/*   Updated: 2025/11/26 17:01:18 by rchan-re         ###   ########.fr       */
+/*   Updated: 2025/11/27 15:36:34 by rchan-re         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,11 @@ int	main(int argc, char **argv)
 			write(fd, "\n", 1);
 		}
 	}
-
+#ifdef BONUS
 	char	*str_null[] = {"%s\n", "%.2s\n", "%.6s\n", "%10s\n", "%10.7s\n", "%3.7s\n", "%42.1s\n", NULL};
+#else
+	char	*str_null[] = {"%s\n", NULL};
+#endif
 	for (int i = 0; str_null[i] != NULL; i++)
 	{
 		char	*tmp = ft_strtrim(str_null[i], "\n");
