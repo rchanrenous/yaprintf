@@ -9,6 +9,7 @@ NC='\033[0m'
 dir_lib_ft_printf=".."
 lib_ft_printf="ftprintf"
 include_ft_printf="../include"
+include_ft_printf2=".."
 include_libft="../libft"
 
 dir_c_files="src/"
@@ -29,8 +30,8 @@ do
 	echo -e "$YELLOW $file $NC"
 	exec_ft_printf="exec_ft_printf"
 	exec_printf="exec_printf"
-	cc -Wall -Wextra -Werror $file $BFLAG -L $dir_lib_ft_printf -l $lib_ft_printf -I $include_ft_printf -I $include_libft -o $exec_ft_printf
-	cc -Wall -Wextra -Werror $file $BFLAG -DPRINTF -L $dir_lib_ft_printf -l $lib_ft_printf -I $include_ft_printf -I $include_libft -o $exec_printf
+	cc -Wall -Wextra -Werror $file $BFLAG -L $dir_lib_ft_printf -l $lib_ft_printf -I $include_ft_printf -I $include_ft_printf2 -I $include_libft -o $exec_ft_printf
+	cc -Wall -Wextra -Werror $file $BFLAG -DPRINTF -L $dir_lib_ft_printf -l $lib_ft_printf -I $include_ft_printf -I $include_ft_printf2 -I $include_libft -o $exec_printf
 	output_ft_printf="output_ft_printf"
 	output_printf="output_printf"
 	res_ft_printf="res_ft_printf"

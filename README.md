@@ -14,10 +14,10 @@ Finally `yaprintf` can also test another feature of the `printf` function, the p
 
 Clone the project at the root of the `ft_printf` project (where the `libfprintf.a` library should be built) and `cd` into `yaprintf`:
 ```
-git clone
+git clone git@github.com:rchanrenous/yaprintf.git
 cd yaprintf
 ```
 
 `make` will build the `ft_printf` project and test the mandatory part.\
 `make bonus` will additionally test the bonus part.\
-`make extra` will build the `ft_printf` project and test a non-required extra feature: positional argument selection, eg. "%1$\*1$.\*d" format strings (`man 3 printf`)
+`make extra` will build the `ft_printf` project and test a non-required extra feature: positional argument selection, eg. `"%1$\*1$.\*d"` format strings (`man 3 printf`)
